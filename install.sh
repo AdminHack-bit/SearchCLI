@@ -6,7 +6,11 @@ read install
 
 if [[ "$install" = "y" ]]; then
     echo "Installing..."
-    
+			
+		 		# Install Python
+    apt install python3 -y
+				pip install requests beautifulsoup4
+
     # Use /usr/local/bin instead of /usr/bin
     mkdir -p /usr/local/bin/.searchcli
     mv searchcli.py /usr/local/bin/.searchcli/
