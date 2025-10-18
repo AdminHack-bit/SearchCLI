@@ -9,7 +9,7 @@ if [[ "$install" = "y" ]]; then
 			
 		 		# Install Python
     apt install python3 -y
-				pip install requests beautifulsoup4
+				pip install requests beautifulsoup4 --break-system-packages
 
     # Use /usr/local/bin instead of /usr/bin
     mkdir -p /usr/local/bin/.searchcli
